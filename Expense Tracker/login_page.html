@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website With Login & Registration Form | Codehal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo"><ion-icon name="wallet"></ion-icon>Expense Tracker</a>
+  </header>
+  <section class="home">
+    <div class="content">
+      <h2>"Spend freely,track Wisely"</h2>
+      <p>An expense tracker is a digital tool designed to monitor, categorize, and analyze spending habits, allowing individuals or businesses to gain insight into their financial transactions for better budget management and planning.</p>
+      <a href="about.html">About Us</a>
+    </div>
+    <div class="wrapper-login">
+      <h2>Member Login</h2>
+      <form id="login-form" action="index.html">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="email" required>
+          <label>Enter your email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+          <input type="password" required>
+          <label>Enter your password</label>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox">Remember me</label>
+          <a href="forgetpassword.html ">forgot password ?</a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="register-link">
+          <p> not a member? <a href="sign_up.html">Sign up</a></p>
+        </div>
+      </form>
+    </div>
+  </section>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Get the login form element
+    const loginForm = document.getElementById('login-form');
+
+    // Add event listener for form submission
+    loginForm.addEventListener('submit', function (event) {
+      // Prevent the default form submission behavior
+      event.preventDefault();
+
+      // Redirect the user to the home page
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+
+</html>

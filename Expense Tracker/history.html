@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker - History</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>Expense Tracker - History</h2>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="logout.html">Logout</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h3>Transaction History</h3>
+        <ul id="transactionHistory" class="list">
+            <!-- Transaction history will be inserted here dynamically -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Fetch transaction history from localStorage and update UI
+        window.onload = function() {
+            const transactions = JSON.parse(localStorage.getItem('transactions')) || [];
+            const transactionHistory = document.getElementById('transactionHistory');
+
+            transactions.forEach(transaction => {
+                const li = document.createElement('li');
+                const sign = transaction.amount < 0 ? '-' : '+';
+                li.textContent = `${transaction.text} (${sign}$${Math.abs(transaction.amount)})`;
+                transactionHistory.appendChild(li);
+            });
+        }
+    </script>
+</body>
+</html>

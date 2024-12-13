@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+:root {
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+* {
+  box-sizing: border-box;
+}
+header {
+  background-color: #2ecc71;
+  color: #FFFFFF;
+  text-align: center;
+  height: 75px;
+  width: 100%;
+}
+body {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  margin: 30px auto;
+  width: 350px;
+}
+
+h1 {
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+h3 {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+  margin: 40px 0 10px;
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.inc-exp-container {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.inc-exp-container > div {
+  flex: 1;
+  text-align: center;
+}
+
+.inc-exp-container > div:first-of-type {
+  border-right: 1px solid #dedede;
+}
+
+.money {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.money.plus {
+  color: #2ecc71;
+}
+
+.money.minus {
+  color: #c0392b;
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+input[type='text'],
+input[type='number'] {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #aa1cfc;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn:focus,
+.delete-btn:focus {
+  outline: 0;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.list li {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.list li.plus {
+  border-right: 5px solid #2ecc71;
+}
+
+.list li.minus {
+  border-right: 5px solid #c0392b;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+/* Add your CSS styles here */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+header h2 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container h1,
+.container h3,
+.container h4 {
+  margin-bottom: 10px;
+}
+
+.inc-exp-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.money {
+  font-size: 1.2em;
+}
+
+.plus {
+  color: #2ecc71;
+}
+
+.minus {
+  color: #e74c3c;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.list li:last-child {
+  border-bottom: none;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control input[type="text"],
+.form-control input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+/* Login Page */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+.header .logo {
+  font-size: 1.7em;
+  color: #fff;
+  text-decoration: none;
+}
+.nav a {
+  position: relative;
+  font-size: 1.1em;
+  color: #fff;
+  margin-left: 40px;
+  text-decoration: none;
+}
+.nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: .5s;
+}
+.nav a:hover::after {
+  transform: scaleX(1);
+}
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('https://wallpapercave.com/wp/wp12439879.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 100px 0;
+}
+.home .content {
+  max-width: 600px;
+  color: #fff;
+}
+.content h2 {
+  font-size: 3em;
+  letter-spacing: .03em;
+}
+.content p{
+  margin: 10px 0 40px;
+
+}
+.content a {
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  font-weight: 500;
+  padding: 10px 40px;
+  border-radius: 40px;
+  transition: .5s;
+}
+.content a:hover{
+  background: #1e0b04;
+}
+.home .wrapper-login {
+  position: relative;
+  width: 440px;
+}
+.wrapper-login h2 {
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+}
+.wrapper-login .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 40px 0;
+}
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 1px solid #fff;
+  outline: none;
+  border-radius: 40px;
+  font-size: 1em;
+  color: #fff;
+  padding: 0 25px 0 45px;
+}
+.input-box label {
+  position: absolute;
+  top: 35%;
+  left: 45px;
+  transform: translateY(-60%);
+  font-size: 1em;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+
+}
+.input-box input:focus~label,
+.input-box input:valid~label {
+  font-size: .8em;
+  top: -20px;
+  left: 17px;
+
+}
+.input-box .icon {
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  font-size: 1.2em;
+  color: #fff;
+}
+.wrapper-login .remember-forgot {
+  font-size: 0.9em;
+  color: #fff;
+  font-weight: 500;
+  margin: -25px 0 15px;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+.remember-forgot label input {
+  accent-color: #1e0b04;
+  margin-right: 3px;
+}
+.remember-forgot a {
+  color:#fff ;
+  text-decoration: none;
+
+}
+.remember-forgot a:hover {
+  text-decoration: underline;
+
+}
+.wrapper-login .btn {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  background: linear-gradient(90deg, #1e0b04, #71412a);
+  box-shadow: 0 8px 10px rgba(0,0,0,0.5);
+  cursor: pointer;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 500;
+}
+.wrapper-login .register-link {
+  font-size: .9em;
+  color: #fff;
+  text-align: center;
+  margin: 30px 0;
+
+}
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+
+}
+.register-link p a:hover {
+  text-decoration: underline;
+}
